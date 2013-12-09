@@ -1,0 +1,1 @@
+<h1>This is the profile of <?php echo htmlspecialchars($user->first_name, ENT_QUOTES, 'UTF-8')?></h1>

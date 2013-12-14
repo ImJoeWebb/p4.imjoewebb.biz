@@ -1,0 +1,36 @@
+2013-12-14 2:07:17 - INFO --> -------------------------- 
+2013-12-14 2:07:17 - INFO --> Controller/Method: email/email 
+2013-12-14 2:07:17 - INFO --> From: Project 4 (joe@imjoewebb.biz) 
+2013-12-14 2:07:17 - INFO --> To: Judy Grimes (imjoewebb@gmail.com),  
+2013-12-14 2:07:17 - INFO --> CC:  
+2013-12-14 2:07:17 - INFO --> BCC:  
+2013-12-14 2:07:17 - INFO --> Subject: Test email 
+2013-12-14 2:07:17 - INFO --> Body: This is an email from your web app 
+2013-12-14 2:07:17 - INFO --> FAILED TO SEND EMAIL 
+2013-12-14 2:07:55 - INFO --> -------------------------- 
+2013-12-14 2:07:55 - INFO --> Controller/Method: email/email 
+2013-12-14 2:07:55 - INFO --> From: Project 4 (imjoewebb@gmail.com) 
+2013-12-14 2:07:55 - INFO --> To: Judy Grimes (imjoewebb@gmail.com),  
+2013-12-14 2:07:55 - INFO --> CC:  
+2013-12-14 2:07:55 - INFO --> BCC:  
+2013-12-14 2:07:55 - INFO --> Subject: Test email 
+2013-12-14 2:07:55 - INFO --> Body: This is an email from your web app 
+2013-12-14 2:07:55 - INFO --> FAILED TO SEND EMAIL 
+2013-12-14 2:16:25 - INFO --> -------------------------- 
+2013-12-14 2:16:25 - INFO --> Controller/Method: email/email 
+2013-12-14 2:16:25 - INFO --> From: Project 4 (imjoewebb@gmail.com) 
+2013-12-14 2:16:25 - INFO --> To: Judy Grimes (imjoewebb@gmail.com),  
+2013-12-14 2:16:25 - INFO --> CC:  
+2013-12-14 2:16:25 - INFO --> BCC:  
+2013-12-14 2:16:25 - INFO --> Subject: Test email 
+2013-12-14 2:16:25 - INFO --> Body: This is an email from your web app 
+2013-12-14 2:16:25 - INFO --> FAILED TO SEND EMAIL 
+2013-12-14 2:16:34 - INFO --> -------------------------- 
+2013-12-14 2:16:34 - INFO --> Controller/Method: email/email 
+2013-12-14 2:16:34 - INFO --> From: Project 4 (imjoewebb@gmail.com) 
+2013-12-14 2:16:34 - INFO --> To: Judy Grimes (imjoewebb@gmail.com),  
+2013-12-14 2:16:34 - INFO --> CC:  
+2013-12-14 2:16:34 - INFO --> BCC:  
+2013-12-14 2:16:34 - INFO --> Subject: Test email 
+2013-12-14 2:16:34 - INFO --> Body: This is an email from your web app 
+2013-12-14 2:16:34 - INFO --> FAILED TO SEND EMAIL 

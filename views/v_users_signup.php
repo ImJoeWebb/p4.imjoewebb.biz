@@ -1,3 +1,5 @@
+
+
 <h2>Sign Up</h2>
 
 <?php if(isset($error) && $error == 'blankFields'): ?>
@@ -15,7 +17,15 @@
 
 <?php endif; ?>
 
-<form method='POST' action='/users/p_signup'>
+<?php if(isset($error) && $error == 'emailWrong'): ?>
+    <div class='error'>
+        This is not a valid email address.
+        <a href="/users/login">Login</a>
+    </div>
+
+<?php endif; ?>
+
+<form id='signup' method='POST' action='/users/p_signup'>
 
     First Name<br>
     <input type='text' name='first_name'>
@@ -36,3 +46,12 @@
     <input type='submit'>
 
 </form>
+
+<script>
+   $( "form" ).submit(function( event ) {
+  alert( "Handler for .submit() called." );
+
+});
+        alert( "Handler for .submit() called." );
+
+</script>

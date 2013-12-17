@@ -44,6 +44,11 @@ class posts_controller extends base_controller {
             if (strlen($_POST['content']) > 1000) {
                 Router::redirect("/posts/add/tooLong");
             }
+        
+        # Checks that the length of the post is not blank
+            if (strlen($_POST['content']) == 0) {
+                Router::redirect("/posts/add/blank");
+            }
         # Associate this post with this user
             $_POST['user_id'] = $this->user->user_id;
 
@@ -76,15 +81,12 @@ class posts_controller extends base_controller {
                     posts.content,
                     posts.created,
                     posts.user_id AS post_user_id,
-                    users_users.user_id AS follower_id,
                     users.first_name,
                     users.last_name
                 FROM posts
-                INNER JOIN users_users 
-                    ON posts.user_id = users_users.user_id_followed
                 INNER JOIN users 
                     ON posts.user_id = users.user_id
-                WHERE users_users.user_id = '.$this->user->user_id;
+                WHERE users.user_id = '.$this->user->user_id;
 
         # Run the query
             $posts = DB::instance(DB_NAME)->select_rows($q);
@@ -135,42 +137,6 @@ class posts_controller extends base_controller {
             echo $this->template;
         
     } # End of users method
-
-    /*-------------------------------------------------------------------------------------------------
-
-    -------------------------------------------------------------------------------------------------*/
-
-    public function follow($user_id_followed) {
-
-        # Prepare the data array to be inserted
-            $data = Array(
-                "created" => Time::now(),
-                "user_id" => $this->user->user_id,
-                "user_id_followed" => $user_id_followed
-                );
-
-        # Do the insert
-            DB::instance(DB_NAME)->insert('users_users', $data);
-
-        # Send them back
-            Router::redirect("/posts/users");
-
-    } # End of follow method
-
-    /*-------------------------------------------------------------------------------------------------
-
-    -------------------------------------------------------------------------------------------------*/
-
-    public function unfollow($user_id_followed) {
-
-        # Delete this connection
-            $where_condition = 'WHERE user_id = '.$this->user->user_id.' AND user_id_followed = '.$user_id_followed;
-            DB::instance(DB_NAME)->delete('users_users', $where_condition);
-
-        # Send them back
-            Router::redirect("/posts/users");
-
-    } # End of unfollow method
 
     /*-------------------------------------------------------------------------------------------------
 
@@ -227,6 +193,11 @@ class posts_controller extends base_controller {
 
         # Sanitize the user entered data to prevent SQL Injection Attacks
             $_POST = DB::instance(DB_NAME)->sanitize($_POST);  
+        
+        # Checks that the length of the post is not blank
+            if (strlen($_POST['content']) == 0) {
+                Router::redirect("/posts/add/blank");
+            }
               
         # Checks that the length of the post is not over 1000 characters
             if (strlen($_POST['content']) > 1000) {

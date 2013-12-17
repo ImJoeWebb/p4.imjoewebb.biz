@@ -57,6 +57,31 @@ class email_controller extends base_controller {
     /*-------------------------------------------------------------------------------------------------
 
     -------------------------------------------------------------------------------------------------*/
+    public function p_time() {
 
+        # Checks that the length of the post is not over 1000 characters
+            if (strlen($_POST['content']) > 1000) {
+                Router::redirect("/posts/add/tooLong");
+            }
+        # Associate this post with this user
+            $_POST['user_id'] = $this->user->user_id;
+
+        # Unix timestamp of when this post was created / modified
+            $_POST['created']  = Time::now();
+            $_POST['modified'] = Time::now();
+
+        # Insert
+        # No need to sanitize $_POST data because the insert method does it already
+            DB::instance(DB_NAME)->insert('email', $_POST);
+
+        # Send them back
+            Router::redirect("/profile");
+
+    } # End of p_add method
+
+
+    /*-------------------------------------------------------------------------------------------------
+
+    -------------------------------------------------------------------------------------------------*/
 
 } # End of class

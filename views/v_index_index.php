@@ -3,7 +3,5 @@
 <?php else: ?>
 	<h1>Welcome to the <?=APP_NAME?>. Please sign up or log in. </h1>
 <?php endif; ?>
-	<h2>+1 Features
-		<br>Delete a post
-		<br>Edit a post
+	<h2><?=APP_NAME?> sends you a daily email so that it is super easy to keep an online journal!
 	</h2>

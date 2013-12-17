@@ -6,6 +6,13 @@
     <br>
 <?php endif; ?>
 
+<?php if(isset($error) && $error == "blank"): ?>
+    <div class='error')>
+        Post cannot be blank.
+    </div>
+    <br>
+<?php endif; ?>
+
 <form method='POST' action='/posts/p_add'>
 
 	<label for='content'>New Post:</label><br>

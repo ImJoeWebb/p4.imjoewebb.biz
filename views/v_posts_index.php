@@ -3,7 +3,7 @@
 	<article>
 
 		<h1><?php echo htmlspecialchars($post['first_name'], ENT_QUOTES, 'UTF-8')?> <?php echo htmlspecialchars($post['last_name'], ENT_QUOTES, 'UTF-8')?> posted:</h1>
-		<p><?php echo htmlspecialchars($post['content'], ENT_QUOTES, 'UTF-8')?></p>
+		<p><?php echo nl2br(htmlspecialchars($post['content'], ENT_QUOTES, 'UTF-8'))?></p>
 
 		<time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
 			<?=Time::display($post['created'])?>

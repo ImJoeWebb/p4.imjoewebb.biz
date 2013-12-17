@@ -4,7 +4,11 @@
 	<title><?php if(isset($title)) echo $title; ?></title>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
-	<link rel="stylesheet" type="text/css" href="/css/stylesheet.css">				
+	<link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+
 	<!-- Controller Specific JS/CSS -->
 	<?php if(isset($client_files_head)) echo $client_files_head; ?>
 	
@@ -15,18 +19,16 @@
 
     <div id='menu'>
         <h1 id="appname">
-            Daily Diary
+             <a class="nav" id="home" href='/'><?=APP_NAME ?></a>
         </h1>
-        <a class="nav" id="home" href='/'>Home</a>
 
         <!-- Menu for users who are logged in -->
         <?php if($user): ?>
 
             <a class="nav" id="logout"  href='/users/logout'>Logout</a>
             <a class="nav" id="profile" href='/users/profile'>Profile</a>
-            <a class="nav" id="posts"   href='/posts'>View Posts</a>
-            <a class="nav" id="follow"  href='/posts/users'>Follow</a>
-            <a class="nav" id="new"     href='/posts/add'>Make a post</a>
+            <a class="nav" id="posts"   href='/posts'>View Diary</a>
+            <a class="nav" id="new"     href='/posts/add'>New Entry</a>
 
         <!-- Menu options for users who are not logged in -->
         <?php else: ?>

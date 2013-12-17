@@ -49,6 +49,11 @@ class users_controller extends base_controller {
                 Router::redirect('/users/signup/blankFields');
             }
         }
+        # Check for proper email format
+        if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            Router::redirect('/users/signup/emailWrong');
+        }
+        
         if (DB::instance(DB_NAME)->select_field("SELECT email FROM users WHERE email ='".$_POST['email']."'") == $_POST['email']) {
             Router::redirect('/users/signup/emailExists');
         }

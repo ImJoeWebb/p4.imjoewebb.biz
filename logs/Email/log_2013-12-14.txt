@@ -34,3 +34,11 @@
 2013-12-14 2:16:34 - INFO --> Subject: Test email 
 2013-12-14 2:16:34 - INFO --> Body: This is an email from your web app 
 2013-12-14 2:16:34 - INFO --> FAILED TO SEND EMAIL 
+2013-12-14 2:26:54 - INFO --> -------------------------- 
+2013-12-14 2:26:54 - INFO --> Controller/Method: email/email 
+2013-12-14 2:26:54 - INFO --> From: Project 4 (imjoewebb@gmail.com) 
+2013-12-14 2:26:54 - INFO --> To: Judy Grimes (imjoewebb@gmail.com),  
+2013-12-14 2:26:54 - INFO --> CC:  
+2013-12-14 2:26:54 - INFO --> BCC:  
+2013-12-14 2:26:54 - INFO --> Subject: Test email 
+2013-12-14 2:26:54 - INFO --> Body: This is an email from your web app 

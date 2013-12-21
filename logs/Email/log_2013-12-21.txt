@@ -1,0 +1,81 @@
+2013-12-21 0:30:04 - INFO --> -------------------------- 
+2013-12-21 0:30:04 - INFO --> Controller/Method: email/email 
+2013-12-21 0:30:04 - INFO --> From: Webb Log (imjoewebb@gmail.com) 
+2013-12-21 0:30:04 - INFO --> To: 0 (imjoewebb@gmail.com),  
+2013-12-21 0:30:04 - INFO --> CC:  
+2013-12-21 0:30:04 - INFO --> BCC:  
+2013-12-21 0:30:04 - INFO --> Subject: Daily Diary 
+2013-12-21 0:30:04 - INFO --> Body: This is a reminder to fill in your diary entry for today 
+2013-12-21 0:30:08 - INFO --> -------------------------- 
+2013-12-21 0:30:08 - INFO --> Controller/Method: email/email 
+2013-12-21 0:30:08 - INFO --> From: Webb Log (imjoewebb@gmail.com) 
+2013-12-21 0:30:08 - INFO --> To: 0 (imjoewebb@gmail.com), 0 (jwebb@mtu.edu),  
+2013-12-21 0:30:08 - INFO --> CC:  
+2013-12-21 0:30:08 - INFO --> BCC:  
+2013-12-21 0:30:08 - INFO --> Subject: Daily Diary 
+2013-12-21 0:30:08 - INFO --> Body: This is a reminder to fill in your diary entry for today 
+2013-12-21 0:31:02 - INFO --> -------------------------- 
+2013-12-21 0:31:02 - INFO --> Controller/Method: email/email 
+2013-12-21 0:31:02 - INFO --> From: Webb Log (imjoewebb@gmail.com) 
+2013-12-21 0:31:02 - INFO --> To: 0 (imjoewebb@gmail.com),  
+2013-12-21 0:31:02 - INFO --> CC:  
+2013-12-21 0:31:02 - INFO --> BCC:  
+2013-12-21 0:31:02 - INFO --> Subject: Daily Diary 
+2013-12-21 0:31:02 - INFO --> Body: This is a reminder to fill in your diary entry for today 
+2013-12-21 0:31:04 - INFO --> -------------------------- 
+2013-12-21 0:31:04 - INFO --> Controller/Method: email/email 
+2013-12-21 0:31:04 - INFO --> From: Webb Log (imjoewebb@gmail.com) 
+2013-12-21 0:31:04 - INFO --> To: 0 (imjoewebb@gmail.com), 0 (jwebb@mtu.edu),  
+2013-12-21 0:31:04 - INFO --> CC:  
+2013-12-21 0:31:04 - INFO --> BCC:  
+2013-12-21 0:31:04 - INFO --> Subject: Daily Diary 
+2013-12-21 0:31:04 - INFO --> Body: This is a reminder to fill in your diary entry for today 
+2013-12-21 0:36:12 - INFO --> -------------------------- 
+2013-12-21 0:36:12 - INFO --> Controller/Method: email/email 
+2013-12-21 0:36:12 - INFO --> From: Webb Log (imjoewebb@gmail.com) 
+2013-12-21 0:36:12 - INFO --> To: 0 (jwebb@mtu.edu),  
+2013-12-21 0:36:12 - INFO --> CC:  
+2013-12-21 0:36:12 - INFO --> BCC:  
+2013-12-21 0:36:12 - INFO --> Subject: Daily Diary 
+2013-12-21 0:36:12 - INFO --> Body: This is a reminder to fill in your diary entry for today 
+2013-12-21 0:37:45 - INFO --> -------------------------- 
+2013-12-21 0:37:45 - INFO --> Controller/Method: email/email 
+2013-12-21 0:37:45 - INFO --> From: Webb Log (imjoewebb@gmail.com) 
+2013-12-21 0:37:45 - INFO --> To: 0 (imjoewebb@gmail.com),  
+2013-12-21 0:37:45 - INFO --> CC:  
+2013-12-21 0:37:45 - INFO --> BCC:  
+2013-12-21 0:37:45 - INFO --> Subject: Daily Diary 
+2013-12-21 0:37:45 - INFO --> Body: This is a reminder to fill in your diary entry for today 
+2013-12-21 0:37:47 - INFO --> -------------------------- 
+2013-12-21 0:37:47 - INFO --> Controller/Method: email/email 
+2013-12-21 0:37:47 - INFO --> From: Webb Log (imjoewebb@gmail.com) 
+2013-12-21 0:37:47 - INFO --> To: 0 (imjoewebb@gmail.com), 0 (jwebb@mtu.edu),  
+2013-12-21 0:37:47 - INFO --> CC:  
+2013-12-21 0:37:47 - INFO --> BCC:  
+2013-12-21 0:37:47 - INFO --> Subject: Daily Diary 
+2013-12-21 0:37:47 - INFO --> Body: This is a reminder to fill in your diary entry for today 
+2013-12-21 1:35:29 - INFO --> -------------------------- 
+2013-12-21 1:35:29 - INFO --> Controller/Method: email/email 
+2013-12-21 1:35:29 - INFO --> From: Webb Log (imjoewebb@gmail.com) 
+2013-12-21 1:35:29 - INFO --> To: 0 (imjoewebb@gmail.com),  
+2013-12-21 1:35:29 - INFO --> CC:  
+2013-12-21 1:35:29 - INFO --> BCC:  
+2013-12-21 1:35:29 - INFO --> Subject: Daily Diary 
+2013-12-21 1:35:29 - INFO --> Body: This is a reminder to fill in your diary entry for today 
+2013-12-21 1:35:51 - INFO --> -------------------------- 
+2013-12-21 1:35:51 - INFO --> Controller/Method: email/email 
+2013-12-21 1:35:51 - INFO --> From: Webb Log (imjoewebb@gmail.com) 
+2013-12-21 1:35:51 - INFO --> To: 0 (imjoewebb@gmail.com),  
+2013-12-21 1:35:51 - INFO --> CC:  
+2013-12-21 1:35:51 - INFO --> BCC:  
+2013-12-21 1:35:51 - INFO --> Subject: Daily Diary 
+2013-12-21 1:35:51 - INFO --> Body: This is a reminder to fill in your diary entry for today 
+2013-12-21 1:36:01 - INFO --> -------------------------- 
+2013-12-21 1:36:01 - INFO --> Controller/Method: email/email 
+2013-12-21 1:36:01 - INFO --> From: Webb Log (imjoewebb@gmail.com) 
+2013-12-21 1:36:01 - INFO --> To: 0 (imjoewebb@gmail.com),  
+2013-12-21 1:36:01 - INFO --> CC:  
+2013-12-21 1:36:01 - INFO --> BCC:  
+2013-12-21 1:36:01 - INFO --> Subject: Daily Diary 
+2013-12-21 1:36:01 - INFO --> Body: <p>This is a reminder to fill in your diary entry for today</p>
+<a href="p4.imjoewebb.biz/posts/add">Add an entry</a> 

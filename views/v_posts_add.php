@@ -15,7 +15,7 @@
 
 <form method='POST' action='/posts/p_add'>
 
-	<label for='content'>New Post:</label><br>
+	<label for='content'>New Entry:</label><br>
 	<textarea name='content' id='content' maxlength="1000"></textarea>
 
 	<br><br>

@@ -99,44 +99,6 @@ class posts_controller extends base_controller {
 
     } # End of index method
 
-    /*-------------------------------------------------------------------------------------------------
-
-    -------------------------------------------------------------------------------------------------*/
-
-    public function users() {
-
-        # Set up the View
-            $this->template->content = View::instance("v_posts_users");
-            $this->template->title   = "Users";
-
-        # Build the query to get all the users
-            $q = "SELECT *
-                FROM users";
-
-        # Execute the query to get all the users.
-        # Store the result array in the variable $users
-            $users = DB::instance(DB_NAME)->select_rows($q);
-
-        # Build the query to figure out what connections does this user already have?
-        # I.e. who are they following
-            $q = "SELECT *
-                FROM users_users
-                WHERE user_id = ".$this->user->user_id;
-
-        # Execute this query with the select_array method
-        # select_array will return our results in an array and use the "users_id_followed" field as the index.
-        # This will come in handy when we get to the view
-        # Store our results (an array) in the variable $connections
-            $connections = DB::instance(DB_NAME)->select_array($q, 'user_id_followed');
-
-        # Pass data (users and connections) to the view
-            $this->template->content->users       = $users;
-            $this->template->content->connections = $connections;
-
-        # Render the view
-            echo $this->template;
-        
-    } # End of users method
 
     /*-------------------------------------------------------------------------------------------------
 

@@ -25,7 +25,7 @@
 
 <?php endif; ?>
 
-<form id='signup' method='POST' action='/users/p_signup'>
+<form id='signup_form' method='POST' action='/users/p_signup'>
 
     First Name<br>
     <input type='text' name='first_name'>
@@ -48,10 +48,7 @@
 </form>
 
 <script>
-   $( "form" ).submit(function( event ) {
-  alert( "Handler for .submit() called." );
 
-});
-        alert( "Handler for .submit() called." );
-
+    
+    
 </script>

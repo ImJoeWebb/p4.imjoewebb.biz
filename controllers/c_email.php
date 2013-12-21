@@ -26,21 +26,40 @@ class email_controller extends base_controller {
             $this->template->content = View::instance('v_email_email');
             $this->template->title   = "Send Email";
         
+        # Build the query
+            $q = 'SELECT 
+                    user_id,
+                    first_name,
+                    last_name,
+                    email,
+                    email_time
+                FROM users';
+
+        # Run the query
+            $posts = DB::instance(DB_NAME)->select_rows($q);
+        
+            $current_time = Time::now();
+        
+        foreach ($posts as $post) {
+            if (Time::display($current_time, 'H') == $post['email_time']) {
+                echo "yes";
+            
+        
             # Build a multi-dimension array of recipients of this email
-            $to[] = Array("name" => "Judy Grimes", "email" => "imjoewebb@gmail.com");
+            $to[] = Array("name" => $post['first_name'] +  " " + $post['last_name'], "email" => $post['email']);
             
             # Build a single-dimension array of who this email is coming from
             # note it's using the constants we set in the configuration above)
             $from = Array("name" => APP_NAME, "email" => APP_EMAIL);
             
             # Subject
-            $subject = "Test email";
+            $subject = "Daily Diary";
             
             # You can set the body as just a string of text
-            $body = "This is an email from your web app";
+            # $body = "This is a reminder to fill in your diary entry for today";
             
             # OR, if your email is complex and involves HTML/CSS, you can build the body via a View just like we do in our controllers
-            # $body = View::instance('e_users_welcome');
+            $body = View::instance('e_daily_email');
             
             # Build multi-dimension arrays of name / email pairs for cc / bcc if you want to 
             $cc  = "";
@@ -48,7 +67,8 @@ class email_controller extends base_controller {
             
             # With everything set, send the email
             $email = Email::send($to, $from, $subject, $body, true, $cc, $bcc);
-
+            }
+        }
         # Render template
             echo $this->template;
 
@@ -57,31 +77,5 @@ class email_controller extends base_controller {
     /*-------------------------------------------------------------------------------------------------
 
     -------------------------------------------------------------------------------------------------*/
-    public function p_time() {
-
-        # Checks that the length of the post is not over 1000 characters
-            if (strlen($_POST['content']) > 1000) {
-                Router::redirect("/posts/add/tooLong");
-            }
-        # Associate this post with this user
-            $_POST['user_id'] = $this->user->user_id;
-
-        # Unix timestamp of when this post was created / modified
-            $_POST['created']  = Time::now();
-            $_POST['modified'] = Time::now();
-
-        # Insert
-        # No need to sanitize $_POST data because the insert method does it already
-            DB::instance(DB_NAME)->insert('email', $_POST);
-
-        # Send them back
-            Router::redirect("/profile");
-
-    } # End of p_add method
-
-
-    /*-------------------------------------------------------------------------------------------------
-
-    -------------------------------------------------------------------------------------------------*/
-
+   
 } # End of class

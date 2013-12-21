@@ -113,7 +113,7 @@ class users_controller extends base_controller {
             if($token) {
                 setcookie('token', $token, strtotime('+2 weeks'), '/');
                 # Send them to the main page - or whever you want them to go
-                Router::redirect("/");
+                Router::redirect("/users/profile");
             }
             else {
                 # If we didn't find a matching token in the database, it means login failed
@@ -163,9 +163,33 @@ class users_controller extends base_controller {
             echo $this->template;
 
     } # End of profile method
+    
 
     /*-------------------------------------------------------------------------------------------------
 
     -------------------------------------------------------------------------------------------------*/
+    
+     public function p_profile() {
+
+        # Checks that the length of the post is not over 1000 characters
+            if ($_POST['email_time'] > 23 || $_POST['email_time'] < 0) {
+                Router::redirect("/users/profile/notValid");
+            }
+
+            $where_condition = 'WHERE user_id ='.$this->user->user_id;
+        # Insert
+        # No need to sanitize $_POST data becasue the insert method does it already
+            DB::instance(DB_NAME)->update_row('users', $_POST, $where_condition);
+         
+        # Send them back
+            Router::redirect("/users/profile");
+
+    } # End of p_add method
+
+
+    /*-------------------------------------------------------------------------------------------------
+
+    -------------------------------------------------------------------------------------------------*/
+
 
 } # end of the class

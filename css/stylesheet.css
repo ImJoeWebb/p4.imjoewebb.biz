@@ -1,24 +1,25 @@
 .error {
-	color: orange;
+	color: red;
 	font-size: 16px;
 }
 
 .nav {
-	color: White;
-	background-color: orange;
+	color: Blue;
+	background-color: White;
 	text-decoration: none;
 	font-size: 24px;
 	border: 2px solid black;
 	border-radius: 40px;
 	padding: 10px;
 	margin: 10px auto 10px auto;
+    display:block;
 
 }
 
 
 body {
 	font-family: "Courier New", Courier, monospace;
-	background-color: gray;	
+	background-color: Blue;	
 	max-width: 940px;
 	min-width: 720px;
 	margin: 10px auto 10px auto;
@@ -31,3 +32,4 @@ body {
 	margin: 10px auto 20px auto;
 	text-align: center;
 }
+

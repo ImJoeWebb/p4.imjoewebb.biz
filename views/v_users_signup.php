@@ -25,22 +25,22 @@
 
 <?php endif; ?>
 
-<form id='signup_form' method='POST' action='/users/p_signup'>
+<form id='signup_form' onsubmit="return validateForm();" method='POST' action='/users/p_signup'>
 
     First Name<br>
-    <input type='text' name='first_name'>
+    <input type='text' name='first_name' id='first_name'>
     <br><br>
 
     Last Name<br>
-    <input type='text' name='last_name'>
+    <input type='text' name='last_name' id='last_name'>
     <br><br>
 
     Email<br>
-    <input type='text' name='email'>
+    <input type='text' name='email' id='email'>
     <br><br>
 
     Password<br>
-    <input type='password' name='password'>
+    <input type='password' name='password' id='password'>
     <br><br>
 
     <input type='submit'>

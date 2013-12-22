@@ -17,13 +17,9 @@
     
 
     <div id='menu'>
-        <h1 id="appname">
-             <a class="nav" id="home" href='/'><?=APP_NAME ?></a>
-        </h1>
-
         <!-- Menu for users who are logged in -->
         <?php if($user): ?>
-
+            <a class="nav" id="home" href='/'><?=APP_NAME ?></a>
             <a class="nav" id="logout"  href='/users/logout'>Logout</a>
             <a class="nav" id="profile" href='/users/profile'>Profile</a>
             <a class="nav" id="posts"   href='/posts'>View Diary</a>
@@ -31,7 +27,7 @@
 
         <!-- Menu options for users who are not logged in -->
         <?php else: ?>
-
+            <a class="nav" id="home" href='/'><?=APP_NAME ?></a>
             <a class="nav" id="signup"  href='/users/signup'>Sign up</a>
             <a class="nav" id="login"   href='/users/login'>Log in</a>
 

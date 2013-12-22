@@ -5,21 +5,18 @@
 
 .nav {
 	color: Blue;
-	background-color: White;
 	text-decoration: none;
 	font-size: 24px;
-	border: 2px solid black;
-	border-radius: 40px;
-	padding: 10px;
+	padding: 30px;
 	margin: 10px auto 10px auto;
-    display:block;
 
 }
 
 
 body {
+    color: DimGray;
 	font-family: "Courier New", Courier, monospace;
-	background-color: Blue;	
+	background-color: LightGray;	
 	max-width: 940px;
 	min-width: 720px;
 	margin: 10px auto 10px auto;
@@ -28,8 +25,14 @@ body {
 	
 }
 
-#appname {
-	margin: 10px auto 20px auto;
-	text-align: center;
+textarea { 
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+    width: 75%;
+    height: 150px;
 }
 
+#message {
+    font-size: 18px;
+}

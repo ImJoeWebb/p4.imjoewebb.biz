@@ -12,10 +12,10 @@
     </div>
     <br>
 <?php endif; ?>
-
+<p id="message">Feel free to write as much or as little as you like- it's your diary!</p>
 <form method='POST' action='/posts/p_add'>
 
-	<label for='content'>New Entry:</label><br>
+	<label for='content'>New Entry:</label><br><br>
 	<textarea name='content' id='content' maxlength="1000"></textarea>
 
 	<br><br>

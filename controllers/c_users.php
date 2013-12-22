@@ -145,7 +145,7 @@ class users_controller extends base_controller {
 
     -------------------------------------------------------------------------------------------------*/
 
-    public function profile($user_name = NULL) {
+    public function profile($error = NULL, $user_name = NULL) {
             if(!$this->user) {
                 Router::redirect('/users/login');
             }
@@ -159,6 +159,7 @@ class users_controller extends base_controller {
             $this->template->title = "Profile of  ".$this->user->first_name;
         # Pass information to the view fragment
             $this->template->content->user_name = $user_name;
+            $this->template->content->error = $error;
         # Render View
             echo $this->template;
 

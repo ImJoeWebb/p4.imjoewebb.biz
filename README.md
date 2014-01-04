@@ -25,3 +25,5 @@ Aspects of the application managed by Javascript:
 Things to work on:
 - Be aware when app is resized to be thinner, it cuts off the navigation.
 - Code relies on br tags. They are pretty inflexible (what if you need to add more space beneath something in the future?) so try wrapping things into div and p tags.	
+
+Cron job: wget -q -O /dev/null http://www.p4.imjoewebb.biz/email/email
